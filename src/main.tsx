@@ -1,3 +1,4 @@
+import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
@@ -5,6 +6,8 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <App />
+    <ThirdwebProvider desiredChainId={ChainId.Mumbai}>
+      <App />
+    </ThirdwebProvider>
   </React.StrictMode>
 );
