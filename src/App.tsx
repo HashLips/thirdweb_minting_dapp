@@ -13,7 +13,7 @@ import {
 } from "@thirdweb-dev/react";
 import { useState } from "react";
 
-const contractAddress = "0x53d8a20f969115df01EcF95e2189490c3ddDcFfb";
+const contractAddress = "YOUR_CONTRACT_ADDRESS_HERE";
 
 function App() {
   const [claiming, setClaiming] = useState(false);
